@@ -14,10 +14,12 @@ public class SetCreditLimit extends javax.swing.JFrame {
     CreditLimitInterface credit = new ImplementCredit();
     CreditLimitInterface NewCredit = new ImplementCredit();
     double currentCredit;
-    
+    String defaultCredit;
     
     public SetCreditLimit() {
         initComponents();
+        defaultCredit= String.valueOf(credit.getCreditLimit());
+        TxtField.setText(defaultCredit);
     }
 
     
@@ -39,7 +41,6 @@ public class SetCreditLimit extends javax.swing.JFrame {
 
         TxtField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         TxtField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        TxtField.setText("5000");
 
         Add.setText("+");
         Add.addActionListener(new java.awt.event.ActionListener() {

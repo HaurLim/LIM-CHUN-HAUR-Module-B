@@ -10,7 +10,7 @@ package PaymentMaintenance;
  * @author chbee
  */
 public class ImplementCredit implements CreditLimitInterface {
-    private double limit;
+    private double limit=6000;
 
     @Override
     public void setCreditLimit(double limit) {
