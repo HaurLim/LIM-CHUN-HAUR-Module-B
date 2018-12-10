@@ -7,7 +7,7 @@ package PaymentMaintenance;
 
 /**
  *
- * @author chbee
+ * @author chbeehh
  */
 public interface CreditLimitInterface {
     //get & set 
